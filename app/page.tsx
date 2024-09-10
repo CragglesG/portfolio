@@ -12,13 +12,13 @@ export default function Page() {
       </p>
       <div className="my-8">
         <h2 className="mb-8 text-xl font-semibold tracking-tighter">
+          Projects:
+        </h2>
+        <PortfolioPosts />
+        <h2 className="mb-8 text-xl font-semibold tracking-tighter">
           Blog Posts:
         </h2>
         <BlogPosts />
-        <h2 className="mb-8 text-xl font-semibold tracking-tighter">
-          Porjects:
-        </h2>
-        <PortfolioPosts />
       </div>
     </section>
   )
