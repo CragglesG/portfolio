@@ -1,4 +1,5 @@
 import { BlogPosts } from 'app/components/posts'
+import { PortfolioPosts } from 'app/components/posts'
 
 export default function Page() {
   return (
@@ -14,6 +15,10 @@ export default function Page() {
           Blog Posts:
         </h2>
         <BlogPosts />
+        <h2 className="mb-8 text-xl font-semibold tracking-tighter">
+          Porjects:
+        </h2>
+        <PortfolioPosts />
       </div>
     </section>
   )
