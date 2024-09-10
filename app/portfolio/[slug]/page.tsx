@@ -51,7 +51,7 @@ export function generateMetadata({ params }) {
   }
 }
 
-export default function Blog({ params }) {
+export default function Portfolio({ params }) {
   let post = getPortfolioPosts().find((post) => post.slug === params.slug)
 
   if (!post) {
