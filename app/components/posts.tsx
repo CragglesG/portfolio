@@ -38,7 +38,7 @@ export function RecentBlogPosts() {
         rel="noopener noreferrer"
         href="/blog"
       >
-        View more projects
+        View more posts
       </Link>
     </div>
   )
