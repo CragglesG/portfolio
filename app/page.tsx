@@ -8,7 +8,7 @@ export default function Page() {
         Craig's Portfolio & Blog
       </h1>
       <p className="mb-4">
-        {`I'm Craig, a passionate coder making cool stuff! This is my portfolio & blog, feel free to have a look around!`}
+        {`I'm Craig, a coder making random stuff! This is my portfolio & blog, feel free to have a look around!`}
       </p>
       <div className="my-8">
         <h2 className="mb-8 text-xl font-semibold tracking-tighter">
