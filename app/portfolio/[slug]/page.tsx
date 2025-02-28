@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation'
 import { CustomMDX } from 'app/components/mdx'
 import { formatDate, getPortfolioPosts } from 'app/portfolio/utils'
 import { baseUrl } from 'app/sitemap'
+import escape from 'escape-html'
 
 export async function generateStaticParams() {
   let posts = getPortfolioPosts()
@@ -67,13 +68,13 @@ export default function Portfolio({ params }) {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'BlogPosting',
-            headline: post.metadata.title,
+            headline: escape(post.metadata.title),
             datePublished: post.metadata.publishedAt,
             dateModified: post.metadata.publishedAt,
-            description: post.metadata.summary,
+            description: escape(post.metadata.summary),
             image: post.metadata.image
               ? `${baseUrl}${post.metadata.image}`
-              : `/og?title=${encodeURIComponent(post.metadata.title)}`,
+              : `/og?title=${encodeURIComponent(escape(post.metadata.title))}`,
             url: `${baseUrl}/blog/${post.slug}`,
             author: {
               '@type': 'Person',
