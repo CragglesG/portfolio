@@ -11,15 +11,15 @@ import { baseUrl } from './sitemap'
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: "Craig Giles | Portfolio & Blog",
+    default: "Craig Giles | Portfolio",
     template: '%s | Craig Giles',
   },
   description: 'This is my portfolio.',
   openGraph: {
-    title: 'Craig Giles | Portfolio & Blog',
-    description: 'Craig\'s Portfolio & Blog',
+    title: 'Craig Giles | Portfolio',
+    description: "Craig's Portfolio",
     url: baseUrl,
-    siteName: 'Craig Giles | Portfolio & Blog',
+    siteName: 'Craig Giles | Portfolio',
     locale: 'en_US',
     type: 'website',
   },
